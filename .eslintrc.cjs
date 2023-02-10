@@ -4,50 +4,51 @@ module.exports = {
     es2021: true
   },
   extends: [
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
+    'eslint-config-prettier',
+    'prettier',
     'standard'
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   rules: {
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
-        "newlines-between": "always",
+        'newlines-between': 'always',
         alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
+          order: 'asc',
+          caseInsensitive: true
         },
-        groups: ["builtin", "external", "internal", "sibling", "type"],
+        groups: ['builtin', 'external', 'internal', 'sibling', 'type'],
         pathGroups: [
           {
-            pattern: "@/**",
-            group: "internal",
-          },
-        ],
-      },
+            pattern: './**',
+            group: 'internal'
+          }
+        ]
+      }
     ],
-    "import/no-unresolved": "error",
-    quotes: ["error", { avoidEscape: true }],
-    "sort-imports": [
-      "error",
+    'import/no-unresolved': 'error',
+    'sort-imports': [
+      'error',
       {
-        ignoreDeclarationSort: true,
-      },
+        ignoreDeclarationSort: true
+      }
     ],
-    "react/display-name": "off",
-    "react/prop-types": "off",
-    "react-native/no-color-literals": "off",
-    "react-native/no-raw-text": "off",
-    'prettier/prettier': 'warn',
+    'react/display-name': 'off',
+    'react/prop-types': 'off',
+    'react-native/no-color-literals': 'off',
+    'react-native/no-raw-text': 'off',
+    'no-unused-vars': 'warn',
+    semi: 'off',
+    'space-before-function-paren': 'off'
   }
-}
+};

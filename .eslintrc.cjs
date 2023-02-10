@@ -7,6 +7,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:import/recommended',
     'eslint-config-prettier',
     'prettier',
@@ -15,6 +16,9 @@ module.exports = {
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
+    ecmaFeatures: {
+      jsx: true
+    },
     sourceType: 'module'
   },
   plugins: ['react'],
@@ -50,5 +54,10 @@ module.exports = {
     'no-unused-vars': 'warn',
     semi: 'off',
     'space-before-function-paren': 'off'
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 };

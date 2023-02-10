@@ -11,7 +11,7 @@ export default function useGetItem(id) {
   return useQuery({
     queryKey: `product-${id}`,
     queryFn: async () => {
-      const { data } = await getItem();
+      const { data } = await getItem(id);
       return data;
     }
   });

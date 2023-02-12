@@ -7,7 +7,7 @@ async function getAllItems() {
   return data;
 }
 
-export default function useGetAllItemsQuery() {
+export default function useGetAllItems() {
   return useQuery({
     queryKey: 'products',
     queryFn: async () => {

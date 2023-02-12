@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
+import { ListView } from './listView.jsx';
 
 export function HomePage() {
-  return <Typography>Hello world</Typography>;
+  return <ListView />;
 }

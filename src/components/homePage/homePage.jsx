@@ -1,5 +1,11 @@
 import { ListView } from './listView.jsx';
+import { SearchBar } from './searchBar.jsx';
 
 export function HomePage() {
-  return <ListView />;
+  return (
+    <div>
+      <SearchBar />
+      <ListView />
+    </div>
+  );
 }

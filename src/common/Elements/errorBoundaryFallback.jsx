@@ -3,7 +3,6 @@ import { Button, Typography } from '@mui/material';
 import { isAPIError } from '../../utils/errors/helpers';
 
 export function ErrorBoundaryFallback({ error, resetErrorBoundary }) {
-  console.log('ERROR!!!:', error.response.data);
   if (!isAPIError(error)) {
     return (
       <div role='alert'>
@@ -24,7 +23,7 @@ export function ErrorBoundaryFallback({ error, resetErrorBoundary }) {
   }
   return (
     <div role='alert'>
-      <Typography>{error.response.data}</Typography>
+      <Typography>{error}</Typography>
     </div>
   );
 }

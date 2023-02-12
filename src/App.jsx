@@ -1,26 +1,24 @@
+import React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-
 import './App.css';
-import useGetItem from './api/useGetItem';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+
 import { ErrorBoundaryFallback } from './common/Elements';
+import { HomePage } from './components/homePage';
+import { NavigationBar } from './components/navigationBar';
 
 function App() {
-  const id = 'ZmGrkLRPXOTpxsU4jjAc';
-  const { data, isSuccess } = useGetItem(id);
   return (
-    <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
-      <div className='App'>
-        <div className='card'>
-          {isSuccess && data && console.log(data)}
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className='read-the-docs'>
-          Click on the Vite and React logos to learn more
-        </p>
-      </div>
-    </ErrorBoundary>
+    <React.Fragment>
+      <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
+        <Router>
+          <NavigationBar />
+          <Routes>
+            <Route path='/' component={<HomePage />} />
+          </Routes>
+        </Router>
+      </ErrorBoundary>
+    </React.Fragment>
   );
 }
 

@@ -13,10 +13,11 @@ const useStyles = makeStyles({
 
 export const Button = React.forwardRef((props, ref) => {
   const classes = useStyles();
-  const { buttonType, variant, children, title, onClick } = props;
+  const { buttonType, variant, children, title, onClick, ...prop } = props;
 
   return (
     <MUIButton
+      {...prop}
       ref={ref}
       variant={buttonType === 'primary' ? 'contained' : 'outlined'}
       type={variant}

@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
 
+import { DetailsPage } from './detailPage';
 import { HomePage } from './homePage';
 import { NavigationBar } from './navigationBar';
 
@@ -15,6 +16,7 @@ export default function AppLayout() {
           <NavigationBar />
           <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path='/details/:id' element={<DetailsPage />} />
           </Routes>
         </DataProvider>
       </ThemeProvider>

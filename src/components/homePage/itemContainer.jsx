@@ -1,14 +1,9 @@
-import {
-  Box,
-  ButtonBase,
-  Card,
-  CardContent,
-  Grid,
-  Typography
-} from '@mui/material';
-import { makeStyles, styled } from '@mui/styles';
+import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { useNavigate } from 'react-router-dom';
 
 import { Button } from '../../common/Elements/Button';
+import { ClickableImage } from '../../common/Elements/ClickableImage';
 
 const useStyles = makeStyles({
   card: {
@@ -28,22 +23,25 @@ const useStyles = makeStyles({
   }
 });
 
-export function ItemContainer({ imageURL, brand, model, price, onClick }) {
+export function ItemContainer({
+  imageURL,
+  brand,
+  model,
+  price,
+  id,
+  onClickShopping
+}) {
   const classes = useStyles();
+  const navigate = useNavigate();
 
-  const Image = styled('img')({
-    margin: 'auto',
-    maxHeight: '100%',
-    maxWidth: '100%',
-    display: 'block',
-    objectFit: 'contain'
-  });
+  const _onClickDetails = () => {
+    navigate(`/details/${id}`);
+  };
+
   return (
-    <Grid item onClick={onClick} className={classes.grid} xs={4}>
+    <Grid item className={classes.grid} xs={4}>
       <Card className={classes.card}>
-        <ButtonBase>
-          <Image alt='phoneImage' src={imageURL} />
-        </ButtonBase>
+        <ClickableImage alt='phoneImage' src={imageURL} />
         <CardContent sx={{ padding: '0.1em' }}>
           <Typography variant='h6' color='CaptionText'>
             {`${brand} - ${model}`}
@@ -57,8 +55,18 @@ export function ItemContainer({ imageURL, brand, model, price, onClick }) {
           </Typography>
         </CardContent>
         <Box component='div' className={classes.buttonBox}>
-          <Button buttonType='secondary' variant='button' title='Details' />
-          <Button buttonType='primary' variant='button' title='Add to cart' />
+          <Button
+            buttonType='secondary'
+            variant='button'
+            title='Details'
+            onClick={_onClickDetails}
+          />
+          <Button
+            buttonType='primary'
+            variant='button'
+            title='Add to cart'
+            onClick={() => onClickShopping()}
+          />
         </Box>
       </Card>
     </Grid>

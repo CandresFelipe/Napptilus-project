@@ -53,7 +53,8 @@ module.exports = {
     'react-native/no-raw-text': 'off',
     'no-unused-vars': 'warn',
     semi: 'off',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    'multiline-ternary': 'off'
   },
   settings: {
     react: {

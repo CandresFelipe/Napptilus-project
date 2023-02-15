@@ -3,8 +3,8 @@ import { ErrorBoundary } from 'react-error-boundary';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { ErrorBoundaryFallback } from './common/Elements';
 import AppLayout from './components/appLayout.jsx';
+import { ErrorBoundaryFallback } from './utils/errors';
 
 function App() {
   return (

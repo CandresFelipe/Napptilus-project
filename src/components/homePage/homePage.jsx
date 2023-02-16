@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 
 import { ListView } from './listView.jsx';
@@ -24,7 +25,8 @@ export function HomePage() {
   ) : isLoading ? (
     <Spinner />
   ) : isSuccess ? (
-    <div>
+    <div style={{ marginTop: 100 }}>
+      <Typography variant='h1'>CompraTuMovil.com</Typography>
       <SearchBar />
       <ListView filteredData={filteredData} />
     </div>

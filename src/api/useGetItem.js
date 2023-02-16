@@ -13,9 +13,6 @@ export default function useGetItem(id) {
     queryFn: async () => {
       const { data } = await getItem(id);
       return data;
-    },
-    cacheTime: 60 * 60 * 1000,
-    staleTime: 60 * 60 * 1000,
-    retry: false
+    }
   });
 }

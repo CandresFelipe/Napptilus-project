@@ -13,9 +13,6 @@ export default function useGetAllItems() {
     queryFn: async () => {
       const { data } = await getAllItems();
       return data;
-    },
-    cacheTime: 60 * 60 * 1000,
-    staleTime: 60 * 60 * 1000,
-    retry: false
+    }
   });
 }

@@ -9,6 +9,12 @@ Go to the project directory
 ```bash
   cd napptilus project
 ```
+Before starting the server, you need to setup the local env variables. For this you need to create a `.env` file in the root of your project
+and add this endpoint:
+
+```
+VITE_API_URL="https://itx-frontend-test.onrender.com/api/"
+```
 
 Install dependencies
 

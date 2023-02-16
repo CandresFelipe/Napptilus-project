@@ -26,7 +26,9 @@ export function HomePage() {
     <Spinner />
   ) : isSuccess ? (
     <div style={{ marginTop: 100 }}>
-      <Typography variant='h1'>CompraTuMovil.com</Typography>
+      <Typography variant='h1' color='black'>
+        CompraTuMovil.com
+      </Typography>
       <SearchBar />
       <ListView filteredData={filteredData} />
     </div>

@@ -32,7 +32,7 @@ export function Modal(props) {
       <Box className={classes.box} paddingTop={0}>
         {modalType !== 'loading' ? (
           <Box component='div' sx={{ background: 'white', padding: 3 }}>
-            <Typography variant='h4' fontWeight='bold'>
+            <Typography variant='h4' fontWeight='bold' color='black'>
               {modalType === 'error' && failedMessage}
               {modalType === 'success' && successMessage}
             </Typography>

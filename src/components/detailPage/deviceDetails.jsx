@@ -67,7 +67,7 @@ export function DeviceDetails({ data }) {
   return (
     <Grid container spacing={2} className={classes.container}>
       <Grid item sm={10} xs={6}>
-        <Typography variant='h5' fontWeight='bold' padding={1}>
+        <Typography variant='h5' fontWeight='bold' padding={1} color='black'>
           {title}
         </Typography>
         <Card className={classes.card}>
@@ -83,6 +83,7 @@ export function DeviceDetails({ data }) {
                             styles={classes.key}
                             fontWeight='bold'
                             component='span'
+                            color='black'
                           >
                             {convertStringToUpperCase(key)}
                           </Typography>
@@ -90,7 +91,11 @@ export function DeviceDetails({ data }) {
                       }
                       secondary={
                         <React.Fragment>
-                          <Typography component='span' variant='body2'>
+                          <Typography
+                            component='span'
+                            variant='body2'
+                            color='color'
+                          >
                             {value === '' ? 'No se define' : value}
                           </Typography>
                         </React.Fragment>

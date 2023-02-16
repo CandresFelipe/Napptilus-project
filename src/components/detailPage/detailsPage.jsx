@@ -37,7 +37,12 @@ export function DetailsPage() {
         <Grid container spacing={3} className={classes.grid}>
           <Grid item xs={12}>
             <Card className={classes.imageBox}>
-              <ClickableImage alt='phoneImage' src={data.imgUrl} height={300} />
+              <ClickableImage
+                alt='phoneImage'
+                src={data.imgUrl}
+                height={300}
+                color='black'
+              />
               <Typography variant='h6' fontWeight='bold' padding={1}>
                 {data.model}
               </Typography>

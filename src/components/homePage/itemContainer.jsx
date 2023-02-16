@@ -38,7 +38,7 @@ export function ItemContainer({ imageURL, brand, model, price, id }) {
       <Card className={classes.card}>
         <ClickableImage alt='phoneImage' src={imageURL} />
         <CardContent sx={{ padding: '0.1em' }}>
-          <Typography variant='h6' color='CaptionText'>
+          <Typography variant='h6' color='black'>
             {`${brand} - ${model}`}
           </Typography>
           <Typography

@@ -186,6 +186,7 @@ export function SelectorComponent({ data }) {
           variant='h5'
           fontWeight='bold'
           className={classes.colorsTitle}
+          color='black'
         >
           {colors}
         </Typography>
@@ -200,7 +201,7 @@ export function SelectorComponent({ data }) {
                   onChange={handleColorChange}
                   inputProps={{ 'arial-label': 'color-check' }}
                 />
-                <Typography>{color.name}</Typography>
+                <Typography color='black'>{color.name}</Typography>
               </Grid>
             );
           })}
@@ -209,6 +210,7 @@ export function SelectorComponent({ data }) {
           variant='h5'
           fontWeight='bold'
           className={classes.storageTitle}
+          color='black'
         >
           {storage}
         </Typography>
@@ -222,7 +224,7 @@ export function SelectorComponent({ data }) {
                   onChange={handleStorageChange}
                   inputProps={{ 'arial-label': 'storage-check' }}
                 />
-                <Typography>{storage.name}</Typography>
+                <Typography color='black'>{storage.name}</Typography>
               </Grid>
             );
           })}

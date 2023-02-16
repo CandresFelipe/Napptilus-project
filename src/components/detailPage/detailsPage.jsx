@@ -13,14 +13,16 @@ const useStyles = makeStyles({
     padding: '1em',
     minWidth: '15em',
     justifyContent: 'center',
-    marginTop: 200
+    marginRight: 15,
+    paddingTop: '3em'
   },
   box: {
     flexGrow: 1,
     marginTop: 90,
     display: 'flex',
     flexDirection: 'row'
-  }
+  },
+  imageBox: { padding: 2, height: 'auto' }
 });
 
 export function DetailsPage() {
@@ -32,9 +34,9 @@ export function DetailsPage() {
     isSuccess &&
     data && (
       <Box component='div' className={classes.box}>
-        <Grid container spacing={3} sx={{ marginRight: 5, marginTop: '2.2em' }}>
+        <Grid container spacing={3} className={classes.grid}>
           <Grid item xs={12}>
-            <Card sx={{ padding: 2, height: 'auto' }}>
+            <Card className={classes.imageBox}>
               <ClickableImage alt='phoneImage' src={data.imgUrl} height={300} />
               <Typography variant='h6' fontWeight='bold' padding={1}>
                 {data.model}

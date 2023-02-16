@@ -22,7 +22,7 @@ export const Button = React.forwardRef((props, ref) => {
       variant={buttonType === 'primary' ? 'contained' : 'outlined'}
       type={variant}
       className={classes.button}
-      color='primary'
+      color={prop.color}
       onClick={onClick}
     >
       {children}

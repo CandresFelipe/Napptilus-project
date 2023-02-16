@@ -54,7 +54,8 @@ module.exports = {
     'no-unused-vars': 'warn',
     semi: 'off',
     'space-before-function-paren': 'off',
-    'multiline-ternary': 'off'
+    'multiline-ternary': 'off',
+    eqeqeq: 'off'
   },
   settings: {
     react: {

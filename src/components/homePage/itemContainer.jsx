@@ -43,7 +43,7 @@ export function ItemContainer({ imageURL, brand, model, price, id }) {
           </Typography>
           <Typography
             variant='h6'
-            color='CaptionText'
+            color='black'
             sx={{ textTransform: 'lowercase' }}
           >
             {price !== '' ? `precio: ${price} €` : 'No disponible'}

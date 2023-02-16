@@ -4,6 +4,8 @@ Repository for a small application to purchase mobile phones. The description of
 
 ## Getting started
 
+Make sure you are using the same node version of this project otherwise vite won't start the server. This project uses Node 16.14.2
+
 Go to your terminal and clone this repository by executing this in your terminal:
 ```
   git clone https://github.com/CandresFelipe/Napptilus-project.git
@@ -34,7 +36,7 @@ Below you will find the command for setting up the project within your machine.
 Start the dev server
 
 ```bash
-  npm run dev
+  npm run start
 ```
 
 Build for production

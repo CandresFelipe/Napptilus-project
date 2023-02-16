@@ -10,10 +10,15 @@ const useStyles = makeStyles({
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 500,
     textAlign: 'center',
     justifyContent: 'center',
-    borderRadius: 4
+    borderRadius: 10
+  },
+  modal: {
+    overflow: 'hidden',
+    background: 'transparent',
+    borderRadius: 10
   }
 });
 
@@ -24,19 +29,18 @@ export function Modal(props) {
   const failedMessage = 'Ha ocurrido un error, intenta de nuevo';
 
   return (
-    <MUIModal
-      {...others}
-      open={open}
-      sx={{ overflow: 'hidden', background: 'transparent' }}
-    >
+    <MUIModal {...others} open={open} className={classes.modal}>
       <Box className={classes.box} paddingTop={0}>
         {modalType !== 'loading' ? (
-          <Box component='div' sx={{ background: 'white', padding: 3 }}>
+          <Box
+            component='div'
+            sx={{ background: 'white', padding: 3, borderRadius: 3 }}
+          >
             <Typography variant='h4' fontWeight='bold' color='black'>
               {modalType === 'error' && failedMessage}
               {modalType === 'success' && successMessage}
             </Typography>
-            <Box sx={{ margin: 3, padding: 2 }}>
+            <Box sx={{ margin: 3, padding: 1, paddingTop: 4 }}>
               <Button
                 sx={{ width: '-webkit-fill-available', padding: 2 }}
                 buttonType='primary'

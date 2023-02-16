@@ -7,6 +7,8 @@ import { SelectorComponent } from './selectorComponent.jsx';
 
 import useGetItem from '../../api/useGetItem.js';
 import { ClickableImage } from '../../common/Elements/ClickableImage';
+import { Spinner } from '../../common/Elements/Spinner';
+import { AxiosErrorHandler } from '../../utils/errors/axiosErrorHandler.jsx';
 
 const useStyles = makeStyles({
   grid: {
@@ -27,10 +29,14 @@ const useStyles = makeStyles({
 
 export function DetailsPage() {
   const { id } = useParams();
-  const { data, isSuccess } = useGetItem(id);
+  const { data, isSuccess, isError, isLoading, error } = useGetItem(id);
   const classes = useStyles();
 
-  return (
+  return isError ? (
+    <AxiosErrorHandler error={error} />
+  ) : isLoading ? (
+    <Spinner />
+  ) : (
     isSuccess &&
     data && (
       <Box component='div' className={classes.box}>

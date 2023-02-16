@@ -4,7 +4,12 @@ Repository for a small application to purchase mobile phones. The description of
 
 ## Getting started
 
-Go to the project directory
+Go to your terminal and clone this repository by executing this in your terminal:
+```
+  git clone https://github.com/CandresFelipe/Napptilus-project.git
+```
+
+Once this is successfully cloned, go to the project directory from where is located.
 
 ```bash
   cd napptilus project

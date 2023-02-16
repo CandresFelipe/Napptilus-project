@@ -19,22 +19,17 @@ const useStyles = makeStyles({
   },
   buttonBox: {
     display: 'flex',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    marginTop: 5
   }
 });
 
-export function ItemContainer({
-  imageURL,
-  brand,
-  model,
-  price,
-  id,
-  onClickShopping
-}) {
+export function ItemContainer({ imageURL, brand, model, price, id }) {
   const classes = useStyles();
   const navigate = useNavigate();
 
-  const _onClickDetails = () => {
+  const _onClickDetails = (event) => {
+    event.preventDefault();
     navigate(`/details/${id}`);
   };
 
@@ -56,16 +51,10 @@ export function ItemContainer({
         </CardContent>
         <Box component='div' className={classes.buttonBox}>
           <Button
-            buttonType='secondary'
-            variant='button'
-            title='Details'
-            onClick={_onClickDetails}
-          />
-          <Button
             buttonType='primary'
             variant='button'
-            title='Add to cart'
-            onClick={() => onClickShopping()}
+            title='Ver detalles'
+            onClick={(event) => _onClickDetails(event)}
           />
         </Box>
       </Card>

@@ -4,7 +4,7 @@ import { ListView } from './listView.jsx';
 import { SearchBar } from './searchBar.jsx';
 
 import useGetAllItems from '../../api/useGetAllItems';
-import { Spinner } from '../../common/Elements/spinner';
+import { Spinner } from '../../common/Elements/Spinner';
 import { useDataContext } from '../../context/dataContext.jsx';
 import { AxiosErrorHandler } from '../../utils/errors/axiosErrorHandler.jsx';
 

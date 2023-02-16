@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   box: {
     display: 'flex',
     flexGrow: 1,
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
     marginTop: 30,
     marginBottom: 30,
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     width: 'auto'
   },
   searchBarIcon: {
-    marginLeft: 5,
+    marginLeft: -195,
     position: 'absolute',
     pointerEvents: 'none',
     display: 'flex',
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
   container: {
     flexDirection: 'column',
-    marginTop: 90,
+    marginTop: 110,
     marginBottom: 5,
     justifyContent: 'center'
   }
@@ -49,7 +49,6 @@ export function SearchBar() {
   const _onChange = useCallback(
     (event) => {
       const value = event.target.value;
-      console.log(value);
       setVal(value);
       if (value !== '') {
         setFilteredData(

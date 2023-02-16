@@ -2,7 +2,7 @@ import { Box, Modal as MUIModal, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 import { Button } from '../Button';
-import { Spinner } from '../spinner';
+import { Spinner } from '../Spinner';
 
 const useStyles = makeStyles({
   box: {

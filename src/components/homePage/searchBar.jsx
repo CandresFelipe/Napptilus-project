@@ -73,7 +73,7 @@ export function SearchBar() {
           type='text'
           className={classes.input}
           placeholder='Search...'
-          inputProps={{ 'aria-label': 'search' }}
+          data-testid='search-input'
           onChange={_onChange}
           value={val}
         />

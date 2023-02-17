@@ -10,23 +10,31 @@ import { useDataContext } from '../../context/dataContext.jsx';
 import { AxiosErrorHandler } from '../../utils/errors/axiosErrorHandler.jsx';
 
 export function HomePage() {
-  const { data, isSuccess, isError, error, isLoading } = useGetAllItems();
+  const {
+    data: itemsData,
+    isSuccess,
+    isError,
+    error,
+    isLoading
+  } = useGetAllItems();
   const [filteredData, setFilteredData] = useDataContext();
 
   useEffect(() => {
-    if (data && isSuccess && filteredData.length === 0) {
-      setFilteredData(data);
+    if (itemsData) {
+      setFilteredData(itemsData);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [data, filteredData, isSuccess]);
+  }, [itemsData]);
 
   return isError ? (
     <AxiosErrorHandler error={error} />
   ) : isLoading ? (
-    <Spinner />
+    <div data-testid='spinner-loading'>
+      <Spinner />
+    </div>
   ) : isSuccess ? (
     <div style={{ marginTop: 100 }}>
-      <Typography variant='h1' color='black'>
+      <Typography variant='h1' color='black' alt='title-home-page'>
         CompraTuMovil.com
       </Typography>
       <SearchBar />

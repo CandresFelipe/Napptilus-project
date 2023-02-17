@@ -9,6 +9,7 @@ export function AxiosErrorHandler({ error }) {
       sx={{
         marginTop: 20
       }}
+      role='axios-error'
     >
       <Typography variant='h4' padding={5}>
         {title}

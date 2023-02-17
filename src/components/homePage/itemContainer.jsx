@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
-export function ItemContainer({ imageURL, brand, model, price, id }) {
+export function ItemContainer({ imageURL, brand, model, price, id, ...props }) {
   const classes = useStyles();
   const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ export function ItemContainer({ imageURL, brand, model, price, id }) {
 
   return (
     <Grid item className={classes.grid} xs={4}>
-      <Card className={classes.card}>
+      <Card className={classes.card} role='columnheader'>
         <ClickableImage alt='phoneImage' src={imageURL} />
         <CardContent sx={{ padding: '0.1em' }}>
           <Typography variant='h6' color='black'>

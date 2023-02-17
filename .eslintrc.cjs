@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'jest/globals': true
   },
   extends: [
     'eslint:recommended',
@@ -9,6 +10,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
     'plugin:import/recommended',
+    'plugin:jest/recommended',
     'eslint-config-prettier',
     'prettier',
     'standard'
@@ -21,7 +23,7 @@ module.exports = {
     },
     sourceType: 'module'
   },
-  plugins: ['react'],
+  plugins: ['react', 'jest'],
   rules: {
     'import/order': [
       'error',

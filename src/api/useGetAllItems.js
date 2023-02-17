@@ -2,12 +2,12 @@ import { useQuery } from 'react-query';
 
 import { appClient } from '../services/client';
 
-async function getAllItems() {
+export async function getAllItems() {
   const data = await appClient.get('/product');
   return data;
 }
 
-export default function useGetAllItems() {
+export function useGetAllItems() {
   return useQuery({
     queryKey: 'products',
     queryFn: async () => {

@@ -108,6 +108,16 @@ export const mockItemDetailsWithObjects = {
   }
 };
 
+export const mockDataMutation = {
+  id: 'test-id',
+  colorCode: 10,
+  storageCode: 20
+};
+
+export const mockDataMutationResponse = {
+  count: 1
+};
+
 export const mockItemDetailsWithUrls = {
   ...singleMockedItem,
   url1: 'https://mockurl1.com',

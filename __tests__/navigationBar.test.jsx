@@ -9,7 +9,7 @@ import {
 } from './__fixtures__/mockData';
 import { dataWrapper } from './__fixtures__/wrappers.js';
 
-import useGetAllItems from '../src/api/useGetAllItems.js';
+import { useGetAllItems } from '../src/api/useGetAllItems.js';
 import { HomePage } from '../src/components/homePage/homePage.jsx';
 import { NavigationBar } from '../src/components/navigationBar';
 import { ItemInCartProvider } from '../src/context/itemsInCartContext.jsx';

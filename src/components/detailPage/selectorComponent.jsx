@@ -4,7 +4,7 @@ import { makeStyles } from '@mui/styles';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import usePostItemToCartQuery from '../../api/postItemToCart';
+import { usePostItemToCartQuery } from '../../api/postItemToCart';
 import { Button } from '../../common/Elements/Button';
 import { Modal } from '../../common/Elements/Modal';
 import { useItemInCartContext } from '../../context/itemsInCartContext.jsx';

@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { DeviceDetails } from './deviceDetails.jsx';
 import { SelectorComponent } from './selectorComponent.jsx';
 
-import useGetItem from '../../api/useGetItem.js';
+import { useGetItem } from '../../api/useGetItem.js';
 import { ClickableImage } from '../../common/Elements/ClickableImage';
 import { Spinner } from '../../common/Elements/Spinner';
 import { AxiosErrorHandler } from '../../utils/errors/axiosErrorHandler.jsx';

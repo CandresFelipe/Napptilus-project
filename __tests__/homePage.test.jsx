@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { mockDataItems } from './__fixtures__/mockData.js';
 import { dataWrapper } from './__fixtures__/wrappers.js';
 
-import useGetAllItems from '../src/api/useGetAllItems.js';
+import { useGetAllItems } from '../src/api/useGetAllItems';
 import { HomePage } from '../src/components/homePage';
 
 const mockedUsedNavigate = jest.fn();
@@ -17,6 +17,13 @@ const mockedUseGetAllItems = useGetAllItems;
 jest.mock('../src/api/useGetAllItems.js');
 
 describe('HomePage component', () => {
+  it('renders homePage', () => {
+    mockedUseGetAllItems.mockImplementation(() => ({
+      isSuccess: true
+    }));
+    const component = render(<HomePage />, { wrapper: dataWrapper });
+    expect(component).toMatchSnapshot();
+  });
   describe('Stages of HomePage rendering', () => {
     it('renders the Search component', () => {
       mockedUseGetAllItems.mockImplementation(() => ({

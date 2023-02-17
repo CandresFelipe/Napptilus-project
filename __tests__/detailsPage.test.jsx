@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { singleMockedItem } from './__fixtures__/mockData';
 import { dataWrapper } from './__fixtures__/wrappers';
 
-import useGetItem from '../src/api/useGetItem';
+import { useGetItem } from '../src/api/useGetItem';
 import { DetailsPage } from '../src/components/detailPage/detailsPage.jsx';
 import { ItemInCartProvider } from '../src/context/itemsInCartContext.jsx';
 

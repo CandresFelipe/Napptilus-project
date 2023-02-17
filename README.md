@@ -1,6 +1,6 @@
 <h1 align="center">Napptilus project</h1>
 
-Repository for a small application to purchase mobile phones. The description of the work  develope in this project is found [in this PDF](Reto_Frontend.pdf)
+Repository for a small application to purchase mobile phones. The description of the work develop in this project is found in [in this PDF](Reto_Frontend.pdf)
 
 ## Getting started
 
@@ -16,12 +16,13 @@ Once this is successfully cloned, go to the project directory from where is loca
 ```bash
   cd napptilus project
 ```
-Before starting the server, you need to setup the local env variables. For this you need to create a `.env` file in the root of your project
+Before starting vite server, you need to setup the local env variables. For this you need to create a `.env` file in the root of your project
 and add this endpoint:
 
 ```
 VITE_API_URL="https://itx-frontend-test.onrender.com/api/"
 ```
+( The endpoint may change subjected to operability )
 
 Install dependencies
 

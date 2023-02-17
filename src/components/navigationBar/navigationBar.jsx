@@ -1,14 +1,8 @@
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Breadcrumbs as MUIBreadcrumbs,
-  Toolbar,
-  Typography
-} from '@mui/material';
+import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
+import { Breadcrumbs } from './breadcrumbs.jsx';
 import { PurchaseCart } from './purchaseCart.jsx';
 
 import napptilusLogo from '../../assets/napptilus_icon.png';
@@ -32,21 +26,6 @@ const useStyles = makeStyles({
       backgroundColor: 'none',
       color: 'white'
     }
-  },
-  link: {
-    color: '#212121',
-    opacity: 0.5,
-    '&:hover': {
-      color: '#212121',
-      opacity: 'unset',
-      textDecoration: 'underline'
-    },
-    fontSize: 22
-  },
-  breadcrumbs: {
-    marginRight: 0,
-    width: 350,
-    justifyContent: 'space-around'
   }
 });
 
@@ -56,37 +35,6 @@ export function NavigationBar() {
 
   const _onNavigateHome = () => {
     navigate('/');
-  };
-  // TODO: do the links associated to the Breadcrumbs
-  const Breadcrumbs = () => {
-    const { id } = useParams();
-    const location = useLocation();
-    if (id) {
-      console.log(id);
-    }
-    const Home = 'Inicio';
-    const Details = 'Detalles del Producto';
-    const isLocationHome = location.pathname != '/';
-    return (
-      <div role='presentation' className={[classes.breadcrumbs]}>
-        <MUIBreadcrumbs arial-aria-label='breadcrumbs'>
-          {isLocationHome ? (
-            <Link className={classes.link} to={'/'}>
-              {Home}
-            </Link>
-          ) : (
-            <Typography color='#212121' variant='h5'>
-              {Home}
-            </Typography>
-          )}
-          {isLocationHome && (
-            <Typography color='#212121' variant='h5'>
-              {Details}
-            </Typography>
-          )}
-        </MUIBreadcrumbs>
-      </div>
-    );
   };
 
   return (

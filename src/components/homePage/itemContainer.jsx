@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   }
 });
 
-export function ItemContainer({ imageURL, brand, model, price, id, ...props }) {
+export function ItemContainer({ imageURL, brand, model, price, id }) {
   const classes = useStyles();
   const navigate = useNavigate();
 
@@ -51,6 +51,7 @@ export function ItemContainer({ imageURL, brand, model, price, id, ...props }) {
         </CardContent>
         <Box component='div' className={classes.buttonBox}>
           <Button
+            data-testid='button-details'
             buttonType='primary'
             variant='button'
             title='Ver detalles'

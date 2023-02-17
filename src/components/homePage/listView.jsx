@@ -7,8 +7,9 @@ export function ListView({ filteredData }) {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container item>
         {filteredData &&
-          filteredData.map((item) => (
+          filteredData.map((item, index) => (
             <ItemContainer
+              role={index}
               key={item.id}
               imageURL={item.imgUrl}
               brand={item.brand}

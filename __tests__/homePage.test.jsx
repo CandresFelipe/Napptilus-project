@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { mockDatItems } from './__fixtures__/mockData.js';
+import { mockDataItems } from './__fixtures__/mockData.js';
 import { dataWrapper } from './__fixtures__/wrappers.js';
 
 import useGetAllItems from '../src/api/useGetAllItems.js';
@@ -34,7 +34,7 @@ describe('HomePage component', () => {
     });
     it('displays the list of items', () => {
       mockedUseGetAllItems.mockImplementation(() => ({
-        data: mockDatItems,
+        data: mockDataItems,
         isSuccess: true
       }));
       render(<HomePage />, { wrapper: dataWrapper });
@@ -42,7 +42,7 @@ describe('HomePage component', () => {
     });
     it('display the error screen when query fails', () => {
       mockedUseGetAllItems.mockImplementation(() => ({
-        data: mockDatItems,
+        data: mockDataItems,
         isError: true,
         error: {
           message: 'axios-error-message'

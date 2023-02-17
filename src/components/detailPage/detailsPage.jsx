@@ -41,7 +41,7 @@ export function DetailsPage() {
     data && (
       <Box component='div' className={classes.box}>
         <Grid container spacing={3} className={classes.grid}>
-          <Grid item xs={12}>
+          <Grid item xs={12} data-testid='grid-phone-image'>
             <Card className={classes.imageBox}>
               <ClickableImage
                 alt='phoneImage'
@@ -54,7 +54,7 @@ export function DetailsPage() {
               </Typography>
             </Card>
           </Grid>
-          <Grid item sm={12} xs={12}>
+          <Grid item sm={12} xs={12} data-testid='grid-selector'>
             <SelectorComponent data={data} />
           </Grid>
         </Grid>

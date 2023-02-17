@@ -1,0 +1,2066 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test detailsPage component render the details of a single item 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="makeStyles-box-5 MuiBox-root css-0"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 makeStyles-grid-4 css-zow5z4-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+            data-testid="grid-phone-image"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-imageBox-6 css-bhp9pd-MuiPaper-root-MuiCard-root"
+            >
+              <button
+                class="MuiButtonBase-root css-10d1a0h-MuiButtonBase-root"
+                tabindex="0"
+                type="button"
+              >
+                <img
+                  alt="phoneImage"
+                  class="img-root-7"
+                  color="black"
+                  height="300"
+                  src="test.png"
+                />
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-gtp8fp-MuiTypography-root"
+              >
+                test-model
+              </h6>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 css-1idn90j-MuiGrid-root"
+            data-testid="grid-selector"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-p41og4-MuiPaper-root-MuiCard-root"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 makeStyles-colorsTitle-8 css-4f64ff-MuiTypography-root"
+              >
+                Colores disponibles: 
+              </h5>
+              <div
+                class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-i0b6mt-MuiGrid-root"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-1m9pwf3"
+                      data-indeterminate="false"
+                      type="checkbox"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="CheckBoxIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                  >
+                    test-black
+                  </p>
+                </div>
+              </div>
+              <h5
+                class="MuiTypography-root MuiTypography-h5 makeStyles-storageTitle-9 css-4f64ff-MuiTypography-root"
+              >
+                Almacenamiento disponible: 
+              </h5>
+              <div
+                class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-i0b6mt-MuiGrid-root"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-1m9pwf3"
+                      data-indeterminate="false"
+                      type="checkbox"
+                      value="0"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="CheckBoxOutlineBlankIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                  >
+                    test-16
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-1m9pwf3"
+                      data-indeterminate="false"
+                      type="checkbox"
+                      value="1"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="CheckBoxOutlineBlankIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                  >
+                    test-32
+                  </p>
+                </div>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium makeStyles-button-12 css-1tnq3yi-MuiButtonBase-root-MuiButton-root"
+                  disabled=""
+                  tabindex="-1"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="ShoppingCartCheckoutIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.25 4l-3.7 7H8.53L4.27 2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2zM12 2l4 4-4 4-1.41-1.41L12.17 7H8V5h4.17l-1.59-1.59L12 2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    style="margin: 0px;"
+                  >
+                    Add to Shopping cart
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 makeStyles-container-16 css-mhc70k-MuiGrid-root"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-10 css-188jg4h-MuiGrid-root"
+            data-testid="grid-details"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-wrjtgl-MuiTypography-root"
+            >
+              Detalles del producto
+            </h5>
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-15 css-bhp9pd-MuiPaper-root-MuiCard-root"
+            >
+              <ul
+                class="MuiList-root MuiList-padding makeStyles-list-13 css-h4y409-MuiList-root"
+                data-listid="list-details"
+              >
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Brand
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-brand
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Model
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-model
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Price
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-price
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        ImgUrl
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test.png
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        NetworkTechnology
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-net
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        NetworkSpeed
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-speed1  test-speed2
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Gprs
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        Yes
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Edge
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        Yes
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Announced
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-promo
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Status
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-status
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Dimentions
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        000
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Weight
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        10
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        SIM
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-sim
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        DisplayType
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-displayType
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        DisplayResolution
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-displayResolution
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        DisplaySize
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-displaySize
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        OS
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-os
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        CPU
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-cpu
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Chipset
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-chipset
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        GPU
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-gpu
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        ExternalMemory
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-extMemory
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        RAM
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-ram
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Speaker
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-speaker
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        AudioJack
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-audioJack
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        GPS
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-gps
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        NFC
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        No se define
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Radio
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-radio
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        USB
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-usb
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+                >
+                  <div
+                    class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                        styles="makeStyles-key-14"
+                      >
+                        Battery
+                      </span>
+                    </span>
+                    <p
+                      class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                      >
+                        test-battery
+                      </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="makeStyles-box-5 MuiBox-root css-0"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 makeStyles-grid-4 css-zow5z4-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-1idn90j-MuiGrid-root"
+          data-testid="grid-phone-image"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-imageBox-6 css-bhp9pd-MuiPaper-root-MuiCard-root"
+          >
+            <button
+              class="MuiButtonBase-root css-10d1a0h-MuiButtonBase-root"
+              tabindex="0"
+              type="button"
+            >
+              <img
+                alt="phoneImage"
+                class="img-root-7"
+                color="black"
+                height="300"
+                src="test.png"
+              />
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-gtp8fp-MuiTypography-root"
+            >
+              test-model
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 css-1idn90j-MuiGrid-root"
+          data-testid="grid-selector"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-p41og4-MuiPaper-root-MuiCard-root"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5 makeStyles-colorsTitle-8 css-4f64ff-MuiTypography-root"
+            >
+              Colores disponibles: 
+            </h5>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-i0b6mt-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    type="checkbox"
+                    value="0"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                >
+                  test-black
+                </p>
+              </div>
+            </div>
+            <h5
+              class="MuiTypography-root MuiTypography-h5 makeStyles-storageTitle-9 css-4f64ff-MuiTypography-root"
+            >
+              Almacenamiento disponible: 
+            </h5>
+            <div
+              class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-i0b6mt-MuiGrid-root"
+            >
+              <div
+                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    type="checkbox"
+                    value="0"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                >
+                  test-16
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    type="checkbox"
+                    value="1"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                >
+                  test-32
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root css-0"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium makeStyles-button-12 css-1tnq3yi-MuiButtonBase-root-MuiButton-root"
+                disabled=""
+                tabindex="-1"
+                type="button"
+              >
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeMedium css-1d6wzja-MuiButton-startIcon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ShoppingCartCheckoutIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03L21 4.96 19.25 4l-3.7 7H8.53L4.27 2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2zM12 2l4 4-4 4-1.41-1.41L12.17 7H8V5h4.17l-1.59-1.59L12 2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  style="margin: 0px;"
+                >
+                  Add to Shopping cart
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 makeStyles-container-16 css-mhc70k-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-10 css-188jg4h-MuiGrid-root"
+          data-testid="grid-details"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-wrjtgl-MuiTypography-root"
+          >
+            Detalles del producto
+          </h5>
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root makeStyles-card-15 css-bhp9pd-MuiPaper-root-MuiCard-root"
+          >
+            <ul
+              class="MuiList-root MuiList-padding makeStyles-list-13 css-h4y409-MuiList-root"
+              data-listid="list-details"
+            >
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Brand
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-brand
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Model
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-model
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Price
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-price
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      ImgUrl
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test.png
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      NetworkTechnology
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-net
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      NetworkSpeed
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-speed1  test-speed2
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Gprs
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      Yes
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Edge
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      Yes
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Announced
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-promo
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Status
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-status
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Dimentions
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      000
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Weight
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      10
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      SIM
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-sim
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      DisplayType
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-displayType
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      DisplayResolution
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-displayResolution
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      DisplaySize
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-displaySize
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      OS
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-os
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      CPU
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-cpu
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Chipset
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-chipset
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      GPU
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-gpu
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      ExternalMemory
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-extMemory
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      RAM
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-ram
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Speaker
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-speaker
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      AudioJack
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-audioJack
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      GPS
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-gps
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      NFC
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      No se define
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Radio
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-radio
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      USB
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-usb
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li
+                class="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-ykqd4v-MuiListItem-root"
+              >
+                <div
+                  class="MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root"
+                >
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 css-jiarnf-MuiTypography-root"
+                      styles="makeStyles-key-14"
+                    >
+                      Battery
+                    </span>
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
+                  >
+                    <span
+                      class="MuiTypography-root MuiTypography-body2 css-e9i5q2-MuiTypography-root"
+                    >
+                      test-battery
+                    </span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

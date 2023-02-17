@@ -66,12 +66,12 @@ export function DeviceDetails({ data }) {
 
   return (
     <Grid container spacing={2} className={classes.container}>
-      <Grid item sm={10} xs={6}>
+      <Grid item sm={10} xs={6} data-testid='grid-details'>
         <Typography variant='h5' fontWeight='bold' padding={1} color='black'>
           {title}
         </Typography>
         <Card className={classes.card}>
-          <List className={classes.list}>
+          <List className={classes.list} data-listid='list-details'>
             {detailsList !== undefined &&
               Object.entries(detailsList).map(([key, value], index) => {
                 return (

@@ -29,9 +29,7 @@ export function HomePage() {
   return isError ? (
     <AxiosErrorHandler error={error} />
   ) : isLoading ? (
-    <div data-testid='spinner-loading'>
-      <Spinner />
-    </div>
+    <Spinner />
   ) : isSuccess ? (
     <div style={{ marginTop: 100 }}>
       <Typography variant='h1' color='black' alt='title-home-page'>

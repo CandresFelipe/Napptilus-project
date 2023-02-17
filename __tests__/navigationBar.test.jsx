@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { BrowserRouter } from 'react-router-dom';
 
 import {
-  mockDatItems,
+  mockDataItems,
   mockUseLocationValue,
   mockUseLocationValueWhenDetailsLanded
 } from './__fixtures__/mockData';
@@ -59,7 +59,7 @@ describe('Check navigationBar component renders correctly', () => {
 
     it('renders both, home and details breadcrumbs', () => {
       mockedUseGetAllItems.mockImplementation(() => ({
-        data: mockDatItems,
+        data: mockDataItems,
         isSuccess: true
       }));
       render(<HomePage />, { wrapper: dataWrapper });

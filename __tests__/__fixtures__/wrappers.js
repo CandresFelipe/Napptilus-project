@@ -2,14 +2,15 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import { DataProvider } from '../../src/context/dataContext.jsx';
 
-export function dataWrapper({ children }) {
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        retry: false
-      }
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false
     }
-  });
+  }
+});
+
+export function dataWrapper({ children }) {
   return (
     <QueryClientProvider client={queryClient}>
       <DataProvider>{children}</DataProvider>

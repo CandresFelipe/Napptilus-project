@@ -7,7 +7,7 @@ function postItemToCart(data) {
   return res;
 }
 
-export function usePostItemToCartQuery() {
+export default function usePostItemToCartQuery() {
   return useMutation({
     mutationKey: 'cart',
     mutationFn: async (data) => {

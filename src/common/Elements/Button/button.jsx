@@ -17,6 +17,7 @@ export const Button = React.forwardRef((props, ref) => {
 
   return (
     <MUIButton
+      role='custom-button'
       {...prop}
       ref={ref}
       variant={buttonType === 'primary' ? 'contained' : 'outlined'}

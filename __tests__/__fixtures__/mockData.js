@@ -58,6 +58,10 @@ export const singleMockedItem = {
       {
         code: 1,
         name: 'test-black'
+      },
+      {
+        code: 2,
+        name: 'test-white'
       }
     ],
     storages: [
@@ -68,6 +72,24 @@ export const singleMockedItem = {
       {
         code: 2,
         name: 'test-32'
+      }
+    ]
+  }
+};
+
+export const singleMockedItemWithOneSelection = {
+  ...singleMockedItem,
+  options: {
+    colors: [
+      {
+        code: 1,
+        name: 'test-black'
+      }
+    ],
+    storages: [
+      {
+        code: 1,
+        name: 'test-16'
       }
     ]
   }

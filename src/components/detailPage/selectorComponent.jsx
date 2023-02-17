@@ -4,7 +4,7 @@ import { makeStyles } from '@mui/styles';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { usePostItemToCartQuery } from '../../api/postItemToCart';
+import usePostItemToCartQuery from '../../api/postItemToCart';
 import { Button } from '../../common/Elements/Button';
 import { Modal } from '../../common/Elements/Modal';
 import { useItemInCartContext } from '../../context/itemsInCartContext.jsx';
@@ -160,6 +160,14 @@ export function SelectorComponent({ data }) {
     });
   };
 
+  useEffect(() => {
+    if (colorChecked.length > 1 && storageChecked.length > 1) {
+      const colorState = colorChecked.some((val) => val.state == true);
+      const storageState = storageChecked.some((val) => val.state == true);
+      setDisabled(!(colorState && storageState));
+    }
+  }, [disabled, colorChecked, storageChecked]);
+
   return (
     <React.Fragment>
       {mutate.isLoading ? (
@@ -198,8 +206,9 @@ export function SelectorComponent({ data }) {
                   className={classes.colorCheckBox}
                   checked={color.state}
                   value={index}
+                  role='checkbox'
                   onChange={handleColorChange}
-                  inputProps={{ 'arial-label': 'color-check' }}
+                  data-testid='color-checkbox'
                 />
                 <Typography color='black'>{color.name}</Typography>
               </Grid>
@@ -219,10 +228,11 @@ export function SelectorComponent({ data }) {
             return (
               <Grid item key={index} className={classes.subGrid}>
                 <Checkbox
+                  role='checkbox'
                   value={index}
                   checked={storage.state}
                   onChange={handleStorageChange}
-                  inputProps={{ 'arial-label': 'storage-check' }}
+                  data-testid='storage-checkbox'
                 />
                 <Typography color='black'>{storage.name}</Typography>
               </Grid>

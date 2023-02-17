@@ -36,7 +36,12 @@ export function Modal(props) {
             component='div'
             sx={{ background: 'white', padding: 3, borderRadius: 3 }}
           >
-            <Typography variant='h4' fontWeight='bold' color='black'>
+            <Typography
+              variant='h4'
+              fontWeight='bold'
+              color='black'
+              data-testid='modal'
+            >
               {modalType === 'error' && failedMessage}
               {modalType === 'success' && successMessage}
             </Typography>

@@ -68,41 +68,6 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                       class="PrivateSwitchBase-input css-1m9pwf3"
                       data-indeterminate="false"
                       type="checkbox"
-                      value="0"
-                    />
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                      data-testid="CheckBoxOutlineBlankIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </span>
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
-                  >
-                    test-black
-                  </p>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
-                >
-                  <span
-                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                    data-testid="color-checkbox"
-                    role="checkbox"
-                  >
-                    <input
-                      class="PrivateSwitchBase-input css-1m9pwf3"
-                      data-indeterminate="false"
-                      type="checkbox"
                       value="1"
                     />
                     <svg
@@ -121,7 +86,42 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                     />
                   </span>
                   <p
-                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                    class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
+                  >
+                    test-black
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                    data-testid="color-checkbox"
+                    role="checkbox"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-1m9pwf3"
+                      data-indeterminate="false"
+                      type="checkbox"
+                      value="2"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="CheckBoxOutlineBlankIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
                   >
                     test-white
                   </p>
@@ -147,41 +147,6 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                       class="PrivateSwitchBase-input css-1m9pwf3"
                       data-indeterminate="false"
                       type="checkbox"
-                      value="0"
-                    />
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                      data-testid="CheckBoxOutlineBlankIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </span>
-                  <p
-                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
-                  >
-                    test-16
-                  </p>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
-                >
-                  <span
-                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                    data-testid="storage-checkbox"
-                    role="checkbox"
-                  >
-                    <input
-                      class="PrivateSwitchBase-input css-1m9pwf3"
-                      data-indeterminate="false"
-                      type="checkbox"
                       value="1"
                     />
                     <svg
@@ -200,7 +165,42 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                     />
                   </span>
                   <p
-                    class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                    class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
+                  >
+                    test-16
+                  </p>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                    data-testid="storage-checkbox"
+                    role="checkbox"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-1m9pwf3"
+                      data-indeterminate="false"
+                      type="checkbox"
+                      value="2"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="CheckBoxOutlineBlankIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </span>
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
                   >
                     test-32
                   </p>
@@ -1114,41 +1114,6 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                     class="PrivateSwitchBase-input css-1m9pwf3"
                     data-indeterminate="false"
                     type="checkbox"
-                    value="0"
-                  />
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                    data-testid="CheckBoxOutlineBlankIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                    />
-                  </svg>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
-                >
-                  test-black
-                </p>
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
-              >
-                <span
-                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                  data-testid="color-checkbox"
-                  role="checkbox"
-                >
-                  <input
-                    class="PrivateSwitchBase-input css-1m9pwf3"
-                    data-indeterminate="false"
-                    type="checkbox"
                     value="1"
                   />
                   <svg
@@ -1167,7 +1132,42 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                   />
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
+                >
+                  test-black
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary makeStyles-colorCheckBox-10 css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                  data-testid="color-checkbox"
+                  role="checkbox"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    type="checkbox"
+                    value="2"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
                 >
                   test-white
                 </p>
@@ -1193,41 +1193,6 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                     class="PrivateSwitchBase-input css-1m9pwf3"
                     data-indeterminate="false"
                     type="checkbox"
-                    value="0"
-                  />
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                    data-testid="CheckBoxOutlineBlankIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                    />
-                  </svg>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
-                >
-                  test-16
-                </p>
-              </div>
-              <div
-                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
-              >
-                <span
-                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
-                  data-testid="storage-checkbox"
-                  role="checkbox"
-                >
-                  <input
-                    class="PrivateSwitchBase-input css-1m9pwf3"
-                    data-indeterminate="false"
-                    type="checkbox"
                     value="1"
                   />
                   <svg
@@ -1246,7 +1211,42 @@ exports[`test detailsPage component render the details of a single item 1`] = `
                   />
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-nnsfc0-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
+                >
+                  test-16
+                </p>
+              </div>
+              <div
+                class="MuiGrid-root MuiGrid-item makeStyles-subGrid-11 css-13i4rnv-MuiGrid-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-root MuiCheckbox-colorPrimary css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                  data-testid="storage-checkbox"
+                  role="checkbox"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-1m9pwf3"
+                    data-indeterminate="false"
+                    type="checkbox"
+                    value="2"
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="CheckBoxOutlineBlankIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-ivvo4t-MuiTypography-root"
                 >
                   test-32
                 </p>

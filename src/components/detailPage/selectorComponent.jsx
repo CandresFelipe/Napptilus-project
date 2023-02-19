@@ -10,254 +10,265 @@ import { Modal } from '../../common/Elements/Modal';
 import { useItemInCartContext } from '../../context/itemsInCartContext.jsx';
 
 const backgroundColor = '#FF8E53';
-
 const useStyles = makeStyles({
-  colorsTitle: { display: 'flex', paddingLeft: 3, paddingTop: 3 },
-  storageTitle: { display: 'flex', paddingLeft: 3 },
-  colorCheckBox: {
-    color: backgroundColor,
-    '&.Mui-checked': {
-      color: backgroundColor
+    colorsTitle: { display: 'flex', paddingLeft: 3, paddingTop: 3 },
+    storageTitle: { display: 'flex', paddingLeft: 3 },
+    colorCheckBox: {
+        color: backgroundColor,
+        '&.Mui-checked': {
+            color: backgroundColor
+        }
+    },
+    subGrid: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center'
     }
-  },
-  subGrid: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
-  }
 });
 
-export function SelectorComponent({ data }) {
-  const [disabled, setDisabled] = useState(true);
-  const { id } = useParams();
-  const [, setItems] = useItemInCartContext();
-  const mutate = usePostItemToCartQuery();
-  const [isCloseModal, setIsCloseModal] = useState(false);
-  const [storageChecked, setStorageChecked] = useState([
-    {
-      key: undefined,
-      name: undefined,
-      state: false,
-      storageCode: undefined
-    }
-  ]);
-  const [colorChecked, setColorChecked] = useState([
-    {
-      key: undefined,
-      name: undefined,
-      state: false,
-      colorCode: undefined
-    }
-  ]);
-  const classes = useStyles();
-  const storage = 'Almacenamiento disponible: ';
-  const colors = 'Colores disponibles: ';
-
-  useEffect(() => {
-    let countColor = 0;
-    let countStorage = 0;
-    const colorTemArr = [];
-    const storageTemArr = [];
-    if (data.options.colors.length === 1) {
-      colorTemArr.push({
-        key: 0,
-        name: data.options.colors[0].name,
-        state: true,
-        colorCode: data.options.colors[0].code
-      });
-      setColorChecked(colorTemArr);
-    } else {
-      for (const [, value] of Object.entries(data.options.colors)) {
-        colorTemArr.push({
-          key: countColor,
-          name: value.name,
-          state: false,
-          colorCode: value.code
-        });
-        setColorChecked(colorTemArr);
-        countColor++;
-      }
-    }
-    if (data.options.storages.length === 1) {
-      storageTemArr.push({
-        key: 0,
-        name: data.options.storages[0].name,
-        state: true,
-        storageCode: data.options.storages[0].code
-      });
-      setStorageChecked(storageTemArr);
-    } else {
-      for (const [, value] of Object.entries(data.options.storages)) {
-        storageTemArr.push({
-          key: countStorage,
-          name: value.name,
-          state: false,
-          storageCode: value.code
-        });
-        setStorageChecked(storageTemArr);
-        countStorage++;
-      }
-    }
-    if (
-      data.options.storages.length === 1 &&
-      data.options.colors.length === 1
-    ) {
-      setDisabled(false);
-    }
-    return () => {
-      countColor = 0;
-      countStorage = 0;
-      setColorChecked([]);
-      setStorageChecked([]);
-      setDisabled(true);
-    };
-  }, [
-    data.options.colors,
-    data.options.storages,
-    data.options.storages.length,
-    data.options.colors.length
-  ]);
-
-  const handleColorChange = useCallback((event) => {
-    const checked = event.target.checked;
-    const value = event.target.value;
-    setColorChecked((prev) =>
-      prev.map((val) =>
-        val.key == value ? { ...val, state: checked } : { ...val, state: false }
-      )
-    );
-    setDisabled(!checked);
-  }, []);
-
-  const handleStorageChange = useCallback((event) => {
-    const checked = event.target.checked;
-    const value = event.target.value;
-    setStorageChecked((prev) =>
-      prev.map((val) =>
-        val.key == value ? { ...val, state: checked } : { ...val, state: false }
-      )
-    );
-    setDisabled(!checked);
-  }, []);
-
-  const onSubmit = () => {
-    const colorSelected = colorChecked.filter((val) => val.state === true);
-    const storageSelected = storageChecked.filter((val) => val.state === true);
-    const obj = {
-      id,
-      colorCode: colorSelected[0].colorCode,
-      storageCode: storageSelected[0].storageCode
-    };
-    console.log(obj);
-    mutate.mutate(obj, {
-      onSuccess(data) {
-        setItems((prev) => prev + data.data.count);
-        setIsCloseModal(true);
-      },
-      onError() {
-        setIsCloseModal(true);
-      }
+export function SelectorComponent({ options }) {
+    const [disabled, setDisabled] = useState(true);
+    const { id } = useParams();
+    const [, setItems] = useItemInCartContext();
+    const mutate = usePostItemToCartQuery();
+    const [isCloseModal, setIsCloseModal] = useState(false);
+    const [_options, setOptions] = useState({
+        colors: [
+            {
+                name: undefined,
+                code: undefined,
+                checked: false
+            }
+        ],
+        storages: [
+            {
+                name: undefined,
+                code: undefined,
+                checked: false
+            }
+        ]
     });
-  };
+    const classes = useStyles();
+    const storage = 'Almacenamiento disponible: ';
+    const colors = 'Colores disponibles: ';
 
-  useEffect(() => {
-    if (colorChecked.length > 1 && storageChecked.length > 1) {
-      const colorState = colorChecked.some((val) => val.state == true);
-      const storageState = storageChecked.some((val) => val.state == true);
-      setDisabled(!(colorState && storageState));
-    }
-  }, [disabled, colorChecked, storageChecked]);
+    useEffect(() => {
+        const initOptions = () => {
+            if (options) {
+                for (const [key, value] of Object.entries(options)) {
+                    let details;
+                    if (value.length == 1) {
+                        details = value.map((val) => ({
+                            ...val,
+                            checked: true
+                        }));
+                    } else {
+                        details = value.map((val) => ({
+                            ...val,
+                            checked: false
+                        }));
+                    }
+                    setOptions((prev) => ({
+                        ...prev,
+                        [key]: details
+                    }));
+                }
+            }
+        };
+        initOptions();
+    }, [options]);
 
-  return (
-    <React.Fragment>
-      {mutate.isLoading ? (
-        <Modal
-          modalType='loading'
-          open={mutate.isLoading}
-          onCloseModal={() => setIsCloseModal(false)}
-        />
-      ) : mutate.isError ? (
-        <Modal
-          modalType='error'
-          open={isCloseModal}
-          onCloseModal={() => setIsCloseModal(false)}
-        />
-      ) : mutate.isSuccess ? (
-        <Modal
-          modalType='success'
-          open={isCloseModal}
-          onCloseModal={() => setIsCloseModal(false)}
-        />
-      ) : null}
-      <Card sx={{ paddingLeft: 2, paddingTop: 2, height: '100%' }}>
-        <Typography
-          variant='h5'
-          fontWeight='bold'
-          className={classes.colorsTitle}
-          color='black'
-        >
-          {colors}
-        </Typography>
-        <Grid container spacing={1} padding={2}>
-          {colorChecked.map((color, index) => {
-            return (
-              <Grid item key={index} className={classes.subGrid}>
-                <Checkbox
-                  className={classes.colorCheckBox}
-                  checked={color.state}
-                  value={index}
-                  role='checkbox'
-                  onChange={handleColorChange}
-                  data-testid='color-checkbox'
-                />
-                <Typography color='black'>{color.name}</Typography>
-              </Grid>
+    useEffect(() => {
+        if (_options) {
+            let allChecked;
+            for (const [key, value] of Object.entries(_options)) {
+                allChecked = {
+                    ...allChecked,
+                    [key]: value.find((val) => val.checked)
+                };
+            }
+            if (
+                typeof allChecked.colors != 'undefined' &&
+                typeof allChecked.storages != 'undefined'
+            ) {
+                setDisabled(false);
+            } else {
+                setDisabled(true);
+            }
+        }
+    }, [_options]);
+
+    const onChangeStorageCheckBox = useCallback((event) => {
+        const checked = event.target.checked;
+        const code = event.target.value;
+        setOptions((prev) => ({
+            ...prev,
+            storages: prev.storages.map((value) => {
+                value.checked =
+                    prev.storages.length == 1
+                        ? true
+                        : value.code == code
+                        ? checked
+                        : false;
+                return {
+                    ...value
+                };
+            })
+        }));
+    }, []);
+
+    const onChangeColorCheckbox = useCallback((event) => {
+        const checked = event.target.checked;
+        const code = event.target.value;
+        setOptions((prev) => ({
+            ...prev,
+            colors: prev.colors.map((value) => {
+                value.checked =
+                    prev.colors.length == 1
+                        ? true
+                        : value.code == code
+                        ? checked
+                        : false;
+                return {
+                    ...value
+                };
+            })
+        }));
+    }, []);
+
+    const onSubmit = () => {
+        if (_options) {
+            const colorSelected = _options.colors.find((val) => val.checked);
+            const storageSelected = _options.storages.find(
+                (val) => val.checked
             );
-          })}
-        </Grid>
-        <Typography
-          variant='h5'
-          fontWeight='bold'
-          className={classes.storageTitle}
-          color='black'
-        >
-          {storage}
-        </Typography>
-        <Grid container spacing={1} padding={2}>
-          {storageChecked.map((storage, index) => {
-            return (
-              <Grid item key={index} className={classes.subGrid}>
-                <Checkbox
-                  role='checkbox'
-                  value={index}
-                  checked={storage.state}
-                  onChange={handleStorageChange}
-                  data-testid='storage-checkbox'
+            const obj = {
+                id,
+                colorCode: colorSelected.code,
+                storageCode: storageSelected.code
+            };
+            mutate.mutate(obj, {
+                onSuccess(data) {
+                    setItems((prev) => prev + data.data.count);
+                    setIsCloseModal(true);
+                },
+                onError() {
+                    setIsCloseModal(true);
+                }
+            });
+        }
+    };
+
+    return (
+        <React.Fragment>
+            {mutate.isLoading ? (
+                <Modal
+                    modalType='loading'
+                    open={mutate.isLoading}
+                    onCloseModal={() => setIsCloseModal(false)}
                 />
-                <Typography color='black'>{storage.name}</Typography>
-              </Grid>
-            );
-          })}
-        </Grid>
-        <Box>
-          <Button
-            disabled={disabled}
-            buttonType='primary'
-            title='Add to Shopping cart'
-            sx={{
-              display: 'flex',
-              width: '-webkit-fill-available',
-              marginRight: 2,
-              marginBottom: 3,
-              padding: 2,
-              background: backgroundColor,
-              marginTop: 2
-            }}
-            onClick={onSubmit}
-            startIcon={<ShoppingCartCheckoutIcon />}
-          />
-        </Box>
-      </Card>
-    </React.Fragment>
-  );
+            ) : mutate.isError ? (
+                <Modal
+                    modalType='error'
+                    open={isCloseModal}
+                    onCloseModal={() => setIsCloseModal(false)}
+                />
+            ) : mutate.isSuccess ? (
+                <Modal
+                    modalType='success'
+                    open={isCloseModal}
+                    onCloseModal={() => setIsCloseModal(false)}
+                />
+            ) : null}
+            <Card
+                sx={{
+                    paddingLeft: 2,
+                    paddingTop: 2,
+                    height: '100%'
+                }}
+            >
+                <Typography
+                    variant='h5'
+                    fontWeight='bold'
+                    className={classes.colorsTitle}
+                    color='black'
+                >
+                    {colors}
+                </Typography>
+                <Grid container spacing={1} padding={2}>
+                    {_options.colors.map((color, index) => {
+                        return (
+                            <Grid item key={index} className={classes.subGrid}>
+                                <Checkbox
+                                    key={color.code}
+                                    className={classes.colorCheckBox}
+                                    checked={
+                                        _options.colors.length == 1
+                                            ? true
+                                            : color.checked
+                                    }
+                                    value={color.code}
+                                    role='checkbox'
+                                    onChange={onChangeColorCheckbox}
+                                    data-testid='color-checkbox'
+                                />
+                                <Typography color='black' textAlign='left'>
+                                    {color.name}
+                                </Typography>
+                            </Grid>
+                        );
+                    })}
+                </Grid>
+                <Typography
+                    variant='h5'
+                    fontWeight='bold'
+                    className={classes.storageTitle}
+                    color='black'
+                >
+                    {storage}
+                </Typography>
+                <Grid container spacing={1} padding={2}>
+                    {_options.storages.map((storage, index) => {
+                        return (
+                            <Grid item key={index} className={classes.subGrid}>
+                                <Checkbox
+                                    key={storage.code}
+                                    role='checkbox'
+                                    value={storage.code}
+                                    checked={
+                                        _options.storages.length == 1
+                                            ? true
+                                            : storage.checked
+                                    }
+                                    onChange={onChangeStorageCheckBox}
+                                    data-testid='storage-checkbox'
+                                />
+                                <Typography color='black' textAlign='left'>
+                                    {storage.name}
+                                </Typography>
+                            </Grid>
+                        );
+                    })}
+                </Grid>
+                <Box>
+                    <Button
+                        disabled={disabled}
+                        buttonType='primary'
+                        title='Add to Shopping cart'
+                        sx={{
+                            display: 'flex',
+                            width: '-webkit-fill-available',
+                            marginRight: 2,
+                            marginBottom: 3,
+                            padding: 2,
+                            background: backgroundColor,
+                            marginTop: 2
+                        }}
+                        onClick={onSubmit}
+                        startIcon={<ShoppingCartCheckoutIcon />}
+                    />
+                </Box>
+            </Card>
+        </React.Fragment>
+    );
 }

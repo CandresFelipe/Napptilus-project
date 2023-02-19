@@ -1,29 +1,29 @@
 module.exports = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        targets: {
-          node: 'current'
-        }
-      }
+    presets: [
+        [
+            '@babel/preset-env',
+            {
+                targets: {
+                    node: 'current'
+                }
+            }
+        ],
+        [
+            '@babel/preset-react',
+            {
+                runtime: 'automatic'
+            }
+        ]
     ],
-    [
-      '@babel/preset-react',
-      {
-        runtime: 'automatic'
-      }
-    ]
-  ],
-  plugins: [
-    function () {
-      return {
-        visitor: {
-          MetaProperty(path) {
-            path.replaceWithSourceString('process');
-          }
+    plugins: [
+        function () {
+            return {
+                visitor: {
+                    MetaProperty(path) {
+                        path.replaceWithSourceString('process');
+                    }
+                }
+            };
         }
-      };
-    }
-  ]
+    ]
 };

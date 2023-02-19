@@ -8,17 +8,17 @@ import { DataProvider } from '../context/dataContext.jsx';
 import { ItemInCartProvider } from '../context/itemsInCartContext.jsx';
 
 export default function AppLayout() {
-  return (
-    <div>
-      <DataProvider>
-        <ItemInCartProvider>
-          <NavigationBar />
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/details/:id' element={<DetailsPage />} />
-          </Routes>
-        </ItemInCartProvider>
-      </DataProvider>
-    </div>
-  );
+    return (
+        <div>
+            <DataProvider>
+                <ItemInCartProvider>
+                    <NavigationBar />
+                    <Routes>
+                        <Route path='/' element={<HomePage />} />
+                        <Route path='/details/:id' element={<DetailsPage />} />
+                    </Routes>
+                </ItemInCartProvider>
+            </DataProvider>
+        </div>
+    );
 }

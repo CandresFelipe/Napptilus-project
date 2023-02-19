@@ -9,17 +9,17 @@ import { ErrorBoundaryFallback } from './utils/errors';
 import theme from './utils/styles/theme';
 
 function App() {
-  return (
-    <React.Fragment>
-      <ThemeProvider theme={theme}>
-        <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
-          <Router>
-            <AppLayout />
-          </Router>
-        </ErrorBoundary>
-      </ThemeProvider>
-    </React.Fragment>
-  );
+    return (
+        <React.Fragment>
+            <ThemeProvider theme={theme}>
+                <ErrorBoundary FallbackComponent={ErrorBoundaryFallback}>
+                    <Router>
+                        <AppLayout />
+                    </Router>
+                </ErrorBoundary>
+            </ThemeProvider>
+        </React.Fragment>
+    );
 }
 
 export default App;

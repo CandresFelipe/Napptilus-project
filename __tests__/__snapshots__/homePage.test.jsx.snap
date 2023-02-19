@@ -6,14 +6,79 @@ exports[`HomePage component renders homePage 1`] = `
   "baseElement": <body>
     <div>
       <div
-        style="margin-top: 100px;"
+        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-4 MuiGrid-grid-lg-12 css-q6t6qd-MuiGrid-root"
+        style="margin-top: 90px;"
       >
-        <h1
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12 css-1idn90j-MuiGrid-root"
+        >
+          <p
+            alt="title-home-page"
+            class="MuiTypography-root MuiTypography-body1 css-w7qlwg-MuiTypography-root"
+          >
+            CompraTuMovil.com
+          </p>
+          <div
+            class="makeStyles-container-5"
+          >
+            <div
+              class="makeStyles-coloredLine-4"
+            />
+            <div
+              class="makeStyles-box-1 MuiBox-root css-0"
+            >
+              <div
+                class="makeStyles-searchBarIcon-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="SearchIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiInputBase-root MuiInputBase-colorPrimary makeStyles-input-3 css-1le28he-MuiInputBase-root"
+                data-testid="search-input"
+              >
+                <input
+                  class="MuiInputBase-input css-yz9k0d-MuiInputBase-input"
+                  placeholder="Search..."
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="makeStyles-coloredLine-4"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-6 MuiGrid-grid-lg-12 css-y0tkjs-MuiGrid-root"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-4 MuiGrid-grid-lg-12 css-q6t6qd-MuiGrid-root"
+      style="margin-top: 90px;"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-12 css-1idn90j-MuiGrid-root"
+      >
+        <p
           alt="title-home-page"
-          class="MuiTypography-root MuiTypography-h1 css-za7rie-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-w7qlwg-MuiTypography-root"
         >
           CompraTuMovil.com
-        </h1>
+        </p>
         <div
           class="makeStyles-container-5"
         >
@@ -54,73 +119,10 @@ exports[`HomePage component renders homePage 1`] = `
             class="makeStyles-coloredLine-4"
           />
         </div>
-        <div
-          class="MuiBox-root css-i9gxme"
-        >
-          <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-item css-1f064cs-MuiGrid-root"
-          />
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      style="margin-top: 100px;"
-    >
-      <h1
-        alt="title-home-page"
-        class="MuiTypography-root MuiTypography-h1 css-za7rie-MuiTypography-root"
-      >
-        CompraTuMovil.com
-      </h1>
-      <div
-        class="makeStyles-container-5"
-      >
-        <div
-          class="makeStyles-coloredLine-4"
-        />
-        <div
-          class="makeStyles-box-1 MuiBox-root css-0"
-        >
-          <div
-            class="makeStyles-searchBarIcon-2"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-              data-testid="SearchIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-              />
-            </svg>
-          </div>
-          <div
-            class="MuiInputBase-root MuiInputBase-colorPrimary makeStyles-input-3 css-1le28he-MuiInputBase-root"
-            data-testid="search-input"
-          >
-            <input
-              class="MuiInputBase-input css-yz9k0d-MuiInputBase-input"
-              placeholder="Search..."
-              type="text"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          class="makeStyles-coloredLine-4"
-        />
       </div>
       <div
-        class="MuiBox-root css-i9gxme"
-      >
-        <div
-          class="MuiGrid-root MuiGrid-container MuiGrid-item css-1f064cs-MuiGrid-root"
-        />
-      </div>
+        class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-6 MuiGrid-grid-lg-12 css-y0tkjs-MuiGrid-root"
+      />
     </div>
   </div>,
   "debug": [Function],

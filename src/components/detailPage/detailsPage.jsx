@@ -1,4 +1,4 @@
-import { Box, Card, Grid, Typography } from '@mui/material';
+import { Card, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useParams } from 'react-router-dom';
 
@@ -11,20 +11,15 @@ import { Spinner } from '../../common/Elements/Spinner';
 import { AxiosErrorHandler } from '../../utils/errors/axiosErrorHandler.jsx';
 
 const useStyles = makeStyles({
-    grid: {
-        padding: '1em',
-        minWidth: '15em',
-        justifyContent: 'center',
-        marginRight: 15,
-        paddingTop: '3em'
-    },
     box: {
         flexGrow: 1,
         marginTop: 90,
         display: 'flex',
         flexDirection: 'row'
     },
-    imageBox: { padding: 2, height: 'auto' }
+    imageBox: {
+        padding: 10
+    }
 });
 
 export function DetailsPage() {
@@ -39,9 +34,9 @@ export function DetailsPage() {
     ) : (
         isSuccess &&
         data && (
-            <Box component='div' className={classes.box}>
-                <Grid container spacing={3} className={classes.grid}>
-                    <Grid item xs={12} data-testid='grid-phone-image'>
+            <Grid container item lg={12} spacing={4} marginTop={10}>
+                <Grid container item lg={6} xs={12} spacing={4}>
+                    <Grid item lg={12} xs={12} data-testid='grid-phone-image'>
                         <Card className={classes.imageBox}>
                             <ClickableImage
                                 alt='phoneImage'
@@ -58,12 +53,20 @@ export function DetailsPage() {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item sm={12} xs={12} data-testid='grid-selector'>
+                    <Grid
+                        item
+                        lg={12}
+                        xs={12}
+                        data-testid='grid-selector'
+                        width={1}
+                    >
                         <SelectorComponent options={data.options} />
                     </Grid>
                 </Grid>
-                <DeviceDetails data={data} />
-            </Box>
+                <Grid item lg={6} xs={12}>
+                    <DeviceDetails data={data} />
+                </Grid>
+            </Grid>
         )
     );
 }

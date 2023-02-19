@@ -1,7 +1,7 @@
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import { Box, Card, Checkbox, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { usePostItemToCartQuery } from '../../api/postItemToCart';
@@ -11,8 +11,8 @@ import { useItemInCartContext } from '../../context/itemsInCartContext.jsx';
 
 const backgroundColor = '#FF8E53';
 const useStyles = makeStyles({
-    colorsTitle: { display: 'flex', paddingLeft: 3, paddingTop: 3 },
-    storageTitle: { display: 'flex', paddingLeft: 3 },
+    colorsTitle: { display: 'flex', paddingTop: 25 },
+    storageTitle: { display: 'flex', textAlign: 'left' },
     colorCheckBox: {
         color: backgroundColor,
         '&.Mui-checked': {
@@ -23,6 +23,12 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center'
+    },
+    card: {
+        paddingTop: 25,
+        paddingLeft: 10,
+        paddingBottom: 25,
+        height: '100%'
     }
 });
 
@@ -160,7 +166,7 @@ export function SelectorComponent({ options }) {
     };
 
     return (
-        <React.Fragment>
+        <Box>
             {mutate.isLoading ? (
                 <Modal
                     modalType='loading'
@@ -180,13 +186,7 @@ export function SelectorComponent({ options }) {
                     onCloseModal={() => setIsCloseModal(false)}
                 />
             ) : null}
-            <Card
-                sx={{
-                    paddingLeft: 2,
-                    paddingTop: 2,
-                    height: '100%'
-                }}
-            >
+            <Card className={classes.card}>
                 <Typography
                     variant='h5'
                     fontWeight='bold'
@@ -250,25 +250,22 @@ export function SelectorComponent({ options }) {
                         );
                     })}
                 </Grid>
-                <Box>
-                    <Button
-                        disabled={disabled}
-                        buttonType='primary'
-                        title='Add to Shopping cart'
-                        sx={{
-                            display: 'flex',
-                            width: '-webkit-fill-available',
-                            marginRight: 2,
-                            marginBottom: 3,
-                            padding: 2,
-                            background: backgroundColor,
-                            marginTop: 2
-                        }}
-                        onClick={onSubmit}
-                        startIcon={<ShoppingCartCheckoutIcon />}
-                    />
-                </Box>
+                <Button
+                    disabled={disabled}
+                    buttonType='primary'
+                    title='Add to Shopping cart'
+                    sx={{
+                        display: 'flex',
+                        width: '-webkit-fill-available',
+                        marginRight: 2,
+                        padding: 2,
+                        background: backgroundColor,
+                        bottom: 10
+                    }}
+                    onClick={onSubmit}
+                    startIcon={<ShoppingCartCheckoutIcon />}
+                />
             </Card>
-        </React.Fragment>
+        </Box>
     );
 }

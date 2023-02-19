@@ -3,6 +3,7 @@ import { Box, InputBase } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useCallback, useState } from 'react';
 
+import { useGetAllItems } from '../../api/useGetAllItems.js';
 import { useDataContext } from '../../context/dataContext.jsx';
 
 const useStyles = makeStyles({
@@ -43,24 +44,26 @@ const useStyles = makeStyles({
 
 export function SearchBar() {
     const classes = useStyles();
+    const { data, isSuccess } = useGetAllItems();
     const [filteredData, setFilteredData] = useDataContext();
     const [val, setVal] = useState('');
 
     const _onChange = useCallback(
         (event) => {
             const value = event.target.value;
-            setVal(value);
             if (value !== '') {
                 setFilteredData(
                     filteredData.filter((item) => item.model.includes(value))
                 );
+                setVal(value);
             } else {
-                setFilteredData([]);
+                setFilteredData(isSuccess && data);
+                setVal(value);
             }
         },
-        [filteredData, setFilteredData]
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [filteredData, isSuccess, data, val]
     );
-
     const ColoredLine = () => <div className={classes.coloredLine}></div>;
     return (
         <div className={classes.container}>

@@ -1,11 +1,4 @@
-import {
-    Card,
-    Grid,
-    List,
-    ListItem,
-    ListItemText,
-    Typography
-} from '@mui/material';
+import { Card, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React, { useCallback, useEffect, useState } from 'react';
 
@@ -69,62 +62,61 @@ export function DeviceDetails({ data }) {
     }, [listedDetails]);
 
     return (
-        <Grid container spacing={2} className={classes.container}>
-            <Grid item sm={10} xs={6} data-testid='grid-details'>
-                <Typography
-                    variant='h5'
-                    fontWeight='bold'
-                    padding={1}
-                    color='black'
-                >
-                    {title}
-                </Typography>
-                <Card className={classes.card}>
-                    <List className={classes.list} data-listid='list-details'>
-                        {detailsList !== undefined &&
-                            Object.entries(detailsList).map(
-                                ([key, value], index) => {
-                                    return (
-                                        <ListItem
-                                            key={index}
-                                            sx={{ padding: 0 }}
-                                        >
-                                            <ListItemText
-                                                primary={
-                                                    <React.Fragment>
-                                                        <Typography
-                                                            styles={classes.key}
-                                                            fontWeight='bold'
-                                                            component='span'
-                                                            color='black'
-                                                        >
-                                                            {convertStringToUpperCase(
-                                                                key
-                                                            )}
-                                                        </Typography>
-                                                    </React.Fragment>
-                                                }
-                                                secondary={
-                                                    <React.Fragment>
-                                                        <Typography
-                                                            component='span'
-                                                            variant='body2'
-                                                            color='color'
-                                                        >
-                                                            {value === ''
-                                                                ? 'No se define'
-                                                                : value}
-                                                        </Typography>
-                                                    </React.Fragment>
-                                                }
-                                            />
-                                        </ListItem>
-                                    );
-                                }
-                            )}
-                    </List>
-                </Card>
-            </Grid>
-        </Grid>
+        <Card
+            component='div'
+            data-testid='grid-details'
+            className={classes.card}
+        >
+            <Typography
+                variant='h5'
+                fontWeight='bold'
+                padding={1}
+                color='black'
+            >
+                {title}
+            </Typography>
+            <Card className={classes.card}>
+                <List className={classes.list} data-listid='list-details'>
+                    {detailsList !== undefined &&
+                        Object.entries(detailsList).map(
+                            ([key, value], index) => {
+                                return (
+                                    <ListItem key={index} sx={{ padding: 0 }}>
+                                        <ListItemText
+                                            primary={
+                                                <React.Fragment>
+                                                    <Typography
+                                                        styles={classes.key}
+                                                        fontWeight='bold'
+                                                        component='span'
+                                                        color='black'
+                                                    >
+                                                        {convertStringToUpperCase(
+                                                            key
+                                                        )}
+                                                    </Typography>
+                                                </React.Fragment>
+                                            }
+                                            secondary={
+                                                <React.Fragment>
+                                                    <Typography
+                                                        component='span'
+                                                        variant='body2'
+                                                        color='color'
+                                                    >
+                                                        {value === ''
+                                                            ? 'No se define'
+                                                            : value}
+                                                    </Typography>
+                                                </React.Fragment>
+                                            }
+                                        />
+                                    </ListItem>
+                                );
+                            }
+                        )}
+                </List>
+            </Card>
+        </Card>
     );
 }

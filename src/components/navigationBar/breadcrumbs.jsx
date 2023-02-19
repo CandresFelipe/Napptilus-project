@@ -1,4 +1,4 @@
-import { Breadcrumbs as MUIBreadcrumbs, Typography } from '@mui/material';
+import { Grid, Breadcrumbs as MUIBreadcrumbs, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -15,8 +15,7 @@ const useStyles = makeStyles({
             color: '#212121',
             opacity: 'unset',
             textDecoration: 'underline'
-        },
-        fontSize: 20
+        }
     }
 });
 
@@ -28,34 +27,44 @@ export function Breadcrumbs() {
     const isLocationHome = location.pathname != '/';
     return (
         <div role='presentation' className={classes.breadcrumbs}>
-            <MUIBreadcrumbs arial-aria-label='breadcrumbs'>
-                {isLocationHome ? (
-                    <Link
-                        className={classes.link}
-                        to={'/'}
-                        data-testid='home-link'
-                    >
-                        {Home}
-                    </Link>
-                ) : (
-                    <Typography
-                        color='#212121'
-                        variant='h6'
-                        data-testid='home-link-text'
-                    >
-                        {Home}
-                    </Typography>
-                )}
-                {isLocationHome && (
-                    <Typography
-                        color='#212121'
-                        variant='h6'
-                        data-testid='product-details-link'
-                    >
-                        {Details}
-                    </Typography>
-                )}
-            </MUIBreadcrumbs>
+            <Grid container item lg={12} xs={12} spacing={2}>
+                <MUIBreadcrumbs arial-aria-label='breadcrumbs'>
+                    <Grid item lg={12} xs={6}>
+                        {isLocationHome ? (
+                            <Link
+                                className={classes.link}
+                                to={'/'}
+                                data-testid='home-link'
+                            >
+                                {Home}
+                            </Link>
+                        ) : (
+                            <Typography
+                                color='#212121'
+                                sx={{ typography: { xs: 'body1' } }}
+                                data-testid='home-link-text'
+                            >
+                                {Home}
+                            </Typography>
+                        )}
+                    </Grid>
+                    <Grid item lg={12} xs={6}>
+                        {isLocationHome && (
+                            <Typography
+                                color='#212121'
+                                sx={{
+                                    typography: {
+                                        xs: 'body1'
+                                    }
+                                }}
+                                data-testid='product-details-link'
+                            >
+                                {Details}
+                            </Typography>
+                        )}
+                    </Grid>
+                </MUIBreadcrumbs>
+            </Grid>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-import { AppBar, Box, IconButton, Toolbar } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,23 +9,12 @@ import napptilusLogo from '../../assets/napptilus_icon.png';
 
 const useStyles = makeStyles({
     appBar: {
-        display: 'flex',
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-        height: 120
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
     },
-    navLinks: {
-        justifyContent: 'center'
-    },
-    logo: { objectFit: 'contain', flexGrow: 1, marginLeft: -305 },
-    linkButton: {
-        textAlign: 'center',
-        color: 'white',
-        textTransform: 'uppercase',
-        fontSize: 18,
-        '&:hover': {
-            backgroundColor: 'none',
-            color: 'white'
-        }
+    image: {
+        borderRadius: 60,
+        maxHeight: 100,
+        minHeight: 50
     }
 });
 
@@ -38,28 +27,30 @@ export function NavigationBar() {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar component='nav' className={classes.appBar}>
-                <Toolbar>
-                    <Box className={classes.navLinks}>
+        <AppBar component='nav' className={classes.appBar}>
+            <Toolbar>
+                <Grid container item lg={12} xs={12} alignItems='center'>
+                    <Grid item lg={3} xs={4}>
                         <Breadcrumbs />
-                    </Box>
-                    <Box className={classes.logo}>
+                    </Grid>
+                    <Grid item lg={6} xs={4}>
                         <IconButton
+                            sx={{ flexGrow: 1 }}
                             size='small'
                             edge='start'
                             onClick={_onNavigateHome}
                         >
                             <img
                                 src={napptilusLogo}
-                                height={100}
-                                style={{ borderRadius: 60 }}
+                                className={classes.image}
                             />
                         </IconButton>
-                    </Box>
-                    <PurchaseCart />
-                </Toolbar>
-            </AppBar>
-        </Box>
+                    </Grid>
+                    <Grid item lg={3} xs={4} textAlign='right'>
+                        <PurchaseCart />
+                    </Grid>
+                </Grid>
+            </Toolbar>
+        </AppBar>
     );
 }

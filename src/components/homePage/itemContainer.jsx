@@ -11,12 +11,7 @@ const useStyles = makeStyles({
         paddingBottom: '1.5em',
         paddingTop: '1.5em'
     },
-    grid: {
-        padding: '1em',
-        minWidth: '15em',
-        flexGrow: 1,
-        justifyContent: 'center'
-    },
+
     buttonBox: {
         display: 'flex',
         justifyContent: 'space-around',
@@ -34,7 +29,7 @@ export function ItemContainer({ imageURL, brand, model, price, id }) {
     };
 
     return (
-        <Grid item className={classes.grid} xs={4}>
+        <Grid item lg={4} xs={12}>
             <Card className={classes.card} role='columnheader'>
                 <ClickableImage alt='phoneImage' src={imageURL} />
                 <CardContent sx={{ padding: '0.1em' }}>

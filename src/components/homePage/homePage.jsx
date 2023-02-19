@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
 
 import { ListView } from './listView.jsx';
@@ -31,13 +31,19 @@ export function HomePage() {
     ) : isLoading ? (
         <Spinner />
     ) : isSuccess ? (
-        <div style={{ marginTop: 100 }}>
-            <Typography variant='h1' color='black' alt='title-home-page'>
-                CompraTuMovil.com
-            </Typography>
-            <SearchBar />
+        <Grid container item lg={12} spacing={4} style={{ marginTop: 90 }}>
+            <Grid item lg={12} xs={12}>
+                <Typography
+                    sx={{ typography: { lg: 'h1', xs: 'h3' } }}
+                    color='black'
+                    alt='title-home-page'
+                >
+                    CompraTuMovil.com
+                </Typography>
+                <SearchBar />
+            </Grid>
             <ListView filteredData={filteredData} />
-        </div>
+        </Grid>
     ) : (
         <React.Fragment></React.Fragment>
     );

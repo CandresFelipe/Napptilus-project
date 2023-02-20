@@ -53,7 +53,10 @@ export function SearchBar() {
             const value = event.target.value;
             if (value !== '') {
                 setFilteredData(
-                    filteredData.filter((item) => item.model.includes(value))
+                    filteredData.filter((item) => {
+                        const val = String(item.model).toLowerCase();
+                        return val.includes(value);
+                    })
                 );
                 setVal(value);
             } else {

@@ -1,7 +1,7 @@
 import SearchIcon from '@mui/icons-material/Search';
 import { Box, InputBase } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { useCallback, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useGetAllItems } from '../../api/useGetAllItems.js';
 import { useDataContext } from '../../context/dataContext.jsx';
@@ -44,29 +44,24 @@ const useStyles = makeStyles({
 
 export function SearchBar() {
     const classes = useStyles();
-    const { data, isSuccess } = useGetAllItems();
-    const [filteredData, setFilteredData] = useDataContext();
-    const [val, setVal] = useState('');
+    const { data } = useGetAllItems();
+    const [, setFilteredData] = useDataContext();
+    const [query, setQuery] = useState('');
 
-    const _onChange = useCallback(
-        (event) => {
-            const value = event.target.value;
-            if (value !== '') {
-                setFilteredData(
-                    filteredData.filter((item) => {
-                        const val = String(item.model).toLowerCase();
-                        return val.includes(value);
-                    })
-                );
-                setVal(value);
-            } else {
-                setFilteredData(isSuccess && data);
-                setVal(value);
-            }
-        },
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        [filteredData, isSuccess, data, val]
-    );
+    useEffect(() => {
+        if (data) {
+            setFilteredData(() =>
+                data.filter((item) =>
+                    query === ''
+                        ? item
+                        : item.model
+                            .toLowerCase()
+                            .includes(query.toLowerCase()) && item
+                )
+            );
+        }
+    }, [data, query, setFilteredData]);
+
     const ColoredLine = () => <div className={classes.coloredLine}></div>;
     return (
         <div className={classes.container}>
@@ -80,8 +75,8 @@ export function SearchBar() {
                     className={classes.input}
                     placeholder='Search...'
                     data-testid='search-input'
-                    onChange={_onChange}
-                    value={val}
+                    onChange={(event) => setQuery(event.target.value)}
+                    value={query}
                 />
             </Box>
             <ColoredLine />
